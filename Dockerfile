@@ -9,5 +9,5 @@ RUN curl -fsSL get.docker.com -o get-docker.sh && \
 	mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg && \
 	sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/dotnetdev.list' && \
 	apt-get update && \
-	apt-get -y install dotnet-sdk-2.1 && \
+	apt-get -y install dotnet-sdk-2.2 && \
 	export PATH=$PATH:$HOME/dotnet 
